@@ -15,8 +15,9 @@
                 </div>
                 <div class="mb-6">
                     <label for="content" class="block mb-2 text-sm font-medium text-gray-900">Konten</label>
-                    <textarea id="content" name="content" rows="10" required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">"{{ $story->content }}"</textarea>
+                    <textarea id="text" name="content" rows="10" required class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">{{ $story->content }}</textarea>
                 </div>
+                
                 <div class="mb-6">
                     <label for="image" class="block mb-2 text-sm font-medium text-gray-900">URL Gambar</label>
                     <input type="url" id="image"  value="{{ $story->image }}" name="image" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Masukkan URL gambar">

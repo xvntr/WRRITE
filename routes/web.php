@@ -27,7 +27,15 @@ Route::POST('/publish', function (WriteValidation $request) {
 })->name('write.store');
 
 Route::PUT('/{id}', function ($id, WriteValidation $request) {
-    $story = Story::create($request->validated());
+    $story = Story::findOrFail($id);
+    $story->update($request->validated());
     return redirect()->route('write.show', ['id' => $story->id]);
 })->name('write.update');
+
+Route::DELETE('/{id}', function ($id, Story $story) {
+    $story = Story::findOrFail($id);
+    $story->delete();
+    return redirect()->route('write.index');
+})->name('write.destroy');
+
 

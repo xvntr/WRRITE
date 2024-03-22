@@ -14,6 +14,14 @@
             <div>
                 <a href="{{ route('write.edit', ['id' => $story->id]) }}" class="inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800">Edit</a>
             </div>
+
+            <div>
+                <form action="{{ route('write.destroy', ['id' => $story->id]) }}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button type="submit">Delete</button>
+                </form>
+            </div>
             <div></div> <!-- This empty div can be used for spacing or additional content if needed -->
         </div>
     </div>
