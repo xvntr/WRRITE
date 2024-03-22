@@ -5,7 +5,7 @@
     
             @forelse ($stories as $story)
             <!-- Repeat this section for each article -->
-            <a href="{{ route('story.show', ['id' => $story->id]) }}" class="block bg-white shadow-lg rounded-lg overflow-hidden">
+            <a href="" class="block bg-white shadow-lg rounded-lg overflow-hidden">
                 <article>
                     <img src="{{ $story->image }}" alt="Article Image" class="w-full h-48 object-cover">
                     <div class="p-5">
@@ -21,7 +21,6 @@
         </div>
         <div class="max-w-4xl mx-auto px-4 py-8 text-center mt-8">
             <div class="px-4 py-3 sm:px-0">
-                {{ $stories->links() }}
             </div>
         </div>
         
