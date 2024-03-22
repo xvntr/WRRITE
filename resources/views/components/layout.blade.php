@@ -10,7 +10,7 @@
 
     <nav class="bg-black shadow-md">
         <div class="max-w-4xl mx-auto px-4 py-8 flex justify-between items-center">
-            <a href="http://write.test" class="no-underline">
+            <a href="http://wrrite.test" class="no-underline">
                 <h1 class="text-xl font-bold text-white">WRRITE</h1>
             </a>
             <ul class="flex space-x-4">
