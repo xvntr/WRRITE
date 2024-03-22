@@ -21,6 +21,7 @@
         </div>
         <div class="max-w-4xl mx-auto px-4 py-8 text-center mt-8">
             <div class="px-4 py-3 sm:px-0">
+                {{ $stories->links() }}
             </div>
         </div>
         
