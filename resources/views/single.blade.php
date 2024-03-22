@@ -12,6 +12,7 @@
     <div class="max-w-4xl mx-auto px-4 mt-8">
         <div class="flex justify-between">
             <div>
+                <a href="{{ route('write.edit', ['id' => $story->id]) }}" class="inline-block bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800">Edit</a>
             </div>
             <div></div> <!-- This empty div can be used for spacing or additional content if needed -->
         </div>
