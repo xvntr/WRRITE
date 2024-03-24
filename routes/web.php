@@ -1,13 +1,13 @@
 <?php
 
-use App\Http\Requests\WriteValidation;
 use App\Models\User;
 use App\Models\Story;
 use Illuminate\Support\Facades\Route;
+use App\Http\Requests\WriteValidation;
+use App\Http\Controllers\IndexController;
 
-Route::get('/', function () {
-    return view('homepage', ['story' => Story::latest()->paginate(9)]);
-})->name('write.index');
+
+Route::get('/', [IndexController::class, 'index'])->name('write.index');
 
 Route::get('/publish', function () {
     return view('publish');
