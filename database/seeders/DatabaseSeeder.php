@@ -12,5 +12,6 @@ class DatabaseSeeder extends Seeder
     {
 
         User::factory(5)->create();
+        Story::factory(10)->create();
     }
 }
