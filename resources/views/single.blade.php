@@ -5,7 +5,7 @@
             <img src="{{ $story->image }}" alt="Post Image" class="w-full mb-6 rounded-md" style="height: 400px; object-fit: cover;">
             <h1 class="text-4xl font-bold mb-4">{{ $story->title }}</h1>
             <h2 class="text-xl text-gray-600 mb-4">by {{ $story->author }}</h2>
-            <p class="text-gray-700 leading-relaxed">{{ $story->content }}</p>
+            <p class="text-gray-700 leading-relaxed">{!! $story->content !!}</p>
         </div>
     </main>
   

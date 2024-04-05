@@ -11,4 +11,6 @@ class Story extends Model
 
     protected $fillable = ['title', 'author', 'content', 'image'];
 
+
 }
+
